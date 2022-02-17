@@ -1,4 +1,4 @@
-# TheGuessingGame
+# The Guessing Game
 
 **Team Name: BEJY Developers**
 
