@@ -6,4 +6,8 @@
     <string name="NormalButton">NORMAL</string>
     <string name="HardButton">HARD</string>
     <string name="Difficulty">Choose A Difficulty:</string>
+    <string name="HintHeader">HINT:</string>
+    <string name="NoButton">NO</string>
+    <string name="YesButton">YES</string>
+    <string name="GiveHighScore">Your High Score Is: </string>
 </resources>
