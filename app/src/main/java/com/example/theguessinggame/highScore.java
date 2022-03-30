@@ -18,12 +18,7 @@ public class highScore extends AppCompatActivity {
         TextView giveHighScore = (TextView) findViewById(R.id.highScore);
         Button exit = (Button) findViewById(R.id.exit);
 
-        int highscore = 10;
-
-
-        score.setText(Integer.toString(highscore));
-        giveHighScore.setText(getResources().getString(R.string.GiveHighScore));
-        exit.setText(getResources().getString(R.string.ExitButton));
+        int highscore = 0;
 
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
