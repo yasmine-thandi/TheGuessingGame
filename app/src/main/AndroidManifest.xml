@@ -21,6 +21,9 @@
 
         <activity android:name=".Pop"></activity>
         <activity android:name=".PopTwo"></activity>
+        <activity android:name=".highScore"></activity>
+        <activity android:name=".hint"></activity>
+        <activity android:name=".hintPrompt"></activity>
     </application>
 
 </manifest>
