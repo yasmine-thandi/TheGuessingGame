@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">The Guessing Game</string>
+    <string name="ExitButton">EXIT</string>
+    <string name="PlayButton">PLAY</string>
+    <string name="Title">THE GUESSING GAME</string>
+    <string name="NormalButton">NORMAL</string>
+    <string name="HardButton">HARD</string>
+    <string name="Difficulty">Choose A Difficulty:</string>
+</resources>
