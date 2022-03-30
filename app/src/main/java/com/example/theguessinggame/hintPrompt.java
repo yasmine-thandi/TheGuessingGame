@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class hintPrompt extends MainActivity {
+public class hintPrompt extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,9 +17,7 @@ public class hintPrompt extends MainActivity {
         Button yesHint = (Button) findViewById(R.id.yesHint);
         TextView prompt = (TextView) findViewById(R.id.message);
 
-        prompt.setText("You have " + /*Integer.toString(highscore) + */" attempts left. Would you like to continue?");
-        noHint.setText(getString(R.string.NoButton));
-        yesHint.setText(getString(R.string.YesButton));
+        //prompt.setText("You have " + Integer.toString(highscore) + " attempts left. Would you like to continue?");
 
         noHint.setOnClickListener(new View.OnClickListener() {
             @Override
