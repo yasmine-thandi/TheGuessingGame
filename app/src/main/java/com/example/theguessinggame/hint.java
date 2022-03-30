@@ -10,17 +10,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import org.w3c.dom.Text;
 
-public class hint extends hintPrompt {
+public class hint extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hint);
-        TextView howClose = findViewById(R.id.hint);
-        TextView hintHeader = findViewById(R.id.hintHeader);
         Button exit = (Button) findViewById(R.id.exitHint);
-
-        hintHeader.setText(getResources().getString(R.string.HintHeader));
-        exit.setText(getResources().getString(R.string.ExitButton));
 
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
