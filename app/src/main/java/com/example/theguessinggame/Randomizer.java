@@ -6,12 +6,6 @@ import java.util.Random;
 
 public class Randomizer{
 
-    EditText guessNumber = (EditText) findViewById(R.id.guessBox);
-    String guessString = guessNumber.getText().toString();
-
-    int intGuess = Randomizer.toInteger(guessString);
-    int randomNumber = Randomizer.randomizeNumber(intGuess);
-
     public static int toInteger(String guessString)
     {
         int result = Integer.parseInt(guessString);
