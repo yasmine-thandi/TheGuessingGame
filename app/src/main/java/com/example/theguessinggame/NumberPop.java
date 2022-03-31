@@ -18,9 +18,9 @@ public class NumberPop extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.type_name);
+        setContentView(R.layout.popwindow);
         Button button2 = (Button) findViewById(R.id.button2);
-        EditText guess = (EditText) findViewById(R.id.guessBox);
+        EditText guess = (EditText) findViewById(R.id.editTextNumber2);
 
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
