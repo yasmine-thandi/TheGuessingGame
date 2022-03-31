@@ -10,4 +10,8 @@
     <string name="NoButton">NO</string>
     <string name="YesButton">YES</string>
     <string name="GiveHighScore">Your High Score Is: </string>
+    <string name="EnterButton">Enter</string>
+    <string name="EnterInput" />
+    <string name="EnterText">Please Enter Your Name</string>
+    <string name="textView2">Please input a number</string>
 </resources>
