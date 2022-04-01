@@ -12,6 +12,7 @@ import android.widget.TextView;
 public class TypeName extends AppCompatActivity {
 
     Button mButton;
+    Button mButton2;
     EditText mEdit;
     TextView mText;
 
