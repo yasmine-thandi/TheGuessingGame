@@ -24,17 +24,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         
-        Button button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                moveTaskToBack(true);
-                android.os.Process.killProcess(android.os.Process.myPid());
-                System.exit(1);
-
-            }
-        });
-        
         play=findViewById(R.id.Play);
         play.setOnClickListener(new View.OnClickListener() {
             @Override
