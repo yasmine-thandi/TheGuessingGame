@@ -40,5 +40,3 @@ public class TypeName extends AppCompatActivity {
         });
     }
 }
-}
-}
