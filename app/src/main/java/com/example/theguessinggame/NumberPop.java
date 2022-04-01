@@ -19,7 +19,7 @@ public class NumberPop extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.popwindow);
-        Button button2 = (Button) findViewById(R.id.button2);
+        Button button2 = (Button) findViewById(R.id.button8);
         EditText guess = (EditText) findViewById(R.id.editTextNumber2);
 
         button2.setOnClickListener(new View.OnClickListener() {
