@@ -21,6 +21,7 @@ public class TypeName extends AppCompatActivity {
         setContentView(R.layout.type_name);
 
         mButton = (Button)findViewById(R.id.button2);
+        mButton2 = (Button)findViewById(R.id.button);
         mButton.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
             public void onClick(View view) {
@@ -29,5 +30,15 @@ public class TypeName extends AppCompatActivity {
                 mText.setText("Thanks for playing " + mEdit.getText().toString() + "!");
             }
         });
+        mButton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                moveTaskToBack(true);
+                android.os.Process.killProcess(android.os.Process.myPid());
+                System.exit(1);
+            }
+        });
     }
+}
+}
 }
