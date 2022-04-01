@@ -24,7 +24,17 @@ public class Pop extends Activity {
 
         Button button4 = (Button) findViewById(R.id.button4);
         Button button5 = (Button) findViewById(R.id.button5);
-
+        Button button3 = (Button) findViewById(R.id.button3);
+        
+        button3.setOnClickListener(new View.OnClickListener() {
+               @Override
+            public void onClick(View view) {
+                moveTaskToBack(true);
+                android.os.Process.killProcess(android.os.Process.myPid());
+                System.exit(1);
+            }
+        });
+       
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
