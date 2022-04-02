@@ -17,7 +17,6 @@ public class hintPrompt extends AppCompatActivity {
         Button yesHint = (Button) findViewById(R.id.yesHint);
         Button exit = (Button) findViewById(R.id.exit);
         TextView prompt = (TextView) findViewById(R.id.message);
-        String userGuess = getIntent().getExtras().getString("userGuess");
         ((MyApplication) this.getApplication()).attempted();
         String attempts = String.valueOf(((MyApplication) this.getApplication()).getAttempts());
         prompt.setText("You have " + attempts + " attempts left. Would you like a hint?");
