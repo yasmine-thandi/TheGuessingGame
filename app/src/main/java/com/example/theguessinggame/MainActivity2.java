@@ -1,4 +1,4 @@
-package com.example.playagainoption;
+package com.example.theguessinggame;
 
 import androidx.appcompat.app.AppCompatActivity;
 
