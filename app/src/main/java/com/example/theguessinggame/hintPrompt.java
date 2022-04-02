@@ -16,8 +16,10 @@ public class hintPrompt extends AppCompatActivity {
         Button noHint = (Button) findViewById(R.id.noHint);
         Button yesHint = (Button) findViewById(R.id.yesHint);
         TextView prompt = (TextView) findViewById(R.id.message);
-
-        //prompt.setText("You have " + Integer.toString(highscore) + " attempts left. Would you like to continue?");
+        String userGuess = getIntent().getExtras().getString("userGuess");
+        ((MyApplication) this.getApplication()).attempted();
+        String attempts = String.valueOf(((MyApplication) this.getApplication()).getAttempts());
+        prompt.setText("You have " + attempts + " attempts left. Would you like a hint?");
 
         noHint.setOnClickListener(new View.OnClickListener() {
             @Override
