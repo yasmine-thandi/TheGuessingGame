@@ -32,7 +32,8 @@ public class hint extends AppCompatActivity {
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent( 
+                Intent intent = new Intent(hint.this,PopTwo.class);
+                startActivity(intent);
             }
         });
         
