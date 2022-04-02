@@ -16,6 +16,18 @@ public class hint extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hint);
         Button exit = (Button) findViewById(R.id.exitHint);
+        TextView hint = (TextView) findViewById(R.id.hint);
+        
+        String guess = "15";
+        String target = String.valueOf(((MyApplication) this.getApplication()).getTarget());
+
+        if (Math.abs(Integer.valueOf(guess) - Integer.valueOf(target)) >= 10) {
+            hint.setText("You are far from the target!");
+        }
+        else {
+            hint.setText("You are close to the target!");
+        }
+
 
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,5 +37,7 @@ public class hint extends AppCompatActivity {
                 System.exit(1); 
             }
         });
+        
+        
     }
 }
