@@ -42,8 +42,6 @@
         app:layout_constraintStart_toEndOf="@+id/noHint"
         app:layout_constraintTop_toBottomOf="@+id/message" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>/>
-
     <Button
         android:id="@+id/exit"
         android:layout_width="105dp"
