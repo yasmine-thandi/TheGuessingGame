@@ -15,6 +15,7 @@ public class hintPrompt extends AppCompatActivity {
         setContentView(R.layout.hint_prompt);
         Button noHint = (Button) findViewById(R.id.noHint);
         Button yesHint = (Button) findViewById(R.id.yesHint);
+        Button exit = (Button) findViewById(R.id.exit);
         TextView prompt = (TextView) findViewById(R.id.message);
         String userGuess = getIntent().getExtras().getString("userGuess");
         ((MyApplication) this.getApplication()).attempted();
@@ -34,6 +35,12 @@ public class hintPrompt extends AppCompatActivity {
                 startActivity(new Intent(hintPrompt.this, hint.class));
             }
         });
-
+        
+        exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                moveTaskToBack(true);
+                android.os.Process.killProcess(android.os.Process.myPid());
+                System.exit(1);
     }
 }
