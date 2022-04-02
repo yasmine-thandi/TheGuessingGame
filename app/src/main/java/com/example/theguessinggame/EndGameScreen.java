@@ -1,4 +1,4 @@
-package com.example.playagainoption;
+package com.example.theguessinggame;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,6 @@ public class EndGameScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_end_game_screen);
+        setContentView(R.layout.activity_endgamescreen);
     }
 }
