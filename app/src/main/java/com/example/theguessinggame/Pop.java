@@ -23,8 +23,13 @@ public class Pop extends Activity {
         getWindow().setLayout(width, height);
 
         Button button4 = (Button) findViewById(R.id.button4);
-        Button button5 = (Button) findViewById(R.id.button5);
         Button button3 = (Button) findViewById(R.id.button3);
+
+        int min = 1;
+        int max = (50);
+        int randomNumber = (int) Math.floor(Math.random() * (max - min + 1) + min);
+
+        ((MyApplication) this.getApplication()).setTarget(randomNumber);
         
         button3.setOnClickListener(new View.OnClickListener() {
                @Override
@@ -38,19 +43,6 @@ public class Pop extends Activity {
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int min = 1;
-                int max = (50);
-                int randomNumber = (int) Math.floor(Math.random() * (max - min + 1) + min);
-                startActivity(new Intent(Pop.this, PopTwo.class));
-            }
-        });
-
-        button5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                int min = 1;
-                int max = (100);
-                int randomNumber = (int) Math.floor(Math.random() * (max - min + 1) + min);
                 startActivity(new Intent(Pop.this, PopTwo.class));
             }
         });
