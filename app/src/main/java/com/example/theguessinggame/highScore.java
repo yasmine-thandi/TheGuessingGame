@@ -11,20 +11,19 @@ import android.widget.TextView;
 
 public class highScore extends AppCompatActivity {
     @Override
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TextView score = (TextView) findViewById(R.id.userScore);
-        TextView giveHighScore = (TextView) findViewById(R.id.highScore);
-        Button exit = (Button) findViewById(R.id.exit);
+        TextView userScore = (TextView) findViewById((R.id.userScore));
 
-        int highscore = 0;
+        Button exit = (Button) findViewById(R.id.exit);
 
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(highScore.this, hintPrompt.class);
-                i.putExtra("highscore", highscore);
                 startActivity(i);
             }
         });
