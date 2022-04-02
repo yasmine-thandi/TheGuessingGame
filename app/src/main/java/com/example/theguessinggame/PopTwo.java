@@ -35,7 +35,8 @@ public class PopTwo extends Pop {
                 String regexStr = "^[0-9]*$";
                 if (guess.getText().toString().trim().matches(regexStr)) {
                     Intent i = new Intent(PopTwo.this, TypeName.class);
-                    startActivity(i);
+                        i.putExtra(guess, "userGuess")
+                        startActivity(i);
                 } else {
                     LayoutInflater inflater = (LayoutInflater)
                             getSystemService(LAYOUT_INFLATER_SERVICE);
