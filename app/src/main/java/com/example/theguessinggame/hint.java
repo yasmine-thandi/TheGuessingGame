@@ -30,10 +30,10 @@ public class hint extends AppCompatActivity {
         }
         
         if (Math.abs(Integer.valueOf(guess) == Integer.valueOf(target))) {
-            Toast.makeText(this, "Congratulations, You Win! You found the number " + target + " in " + attempts + " tries").show();
+            Toast.makeText(getApplicationContext(), "Congratulations, You Win! You found the number " + target + " in " + attempts + " tries",Toast.LENGTH_SHORT).show();
         }
         if (attempts == 0){
-            Toast.makeText(this, "Unfortunately, You Lose. The ran out of tries").show();
+            Toast.makeText(getApplicationContext(), "Unfortunately, You Lose. The ran out of tries", Toast.LENGTH_SHORT).show();
         }
 
         exit.setOnClickListener(new View.OnClickListener() {
