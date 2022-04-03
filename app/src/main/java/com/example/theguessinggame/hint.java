@@ -31,7 +31,7 @@ public class hint extends AppCompatActivity {
         }
         
         if (Integer.valueOf(guess) == Integer.valueOf(target)) {
-            Toast.makeText(getApplicationContext(), "Congratulations, You Win! You found the number " + target + " in " + attempts + " tries",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Congratulations, You Win! You found the number " + target + " and have " + attempts + " tries left",Toast.LENGTH_SHORT).show();
         }
         if (attempts == 0){
             Toast.makeText(getApplicationContext(), "Unfortunately, You Lose. The ran out of tries", Toast.LENGTH_SHORT).show();
