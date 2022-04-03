@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 
 public class highScore extends AppCompatActivity {
-    public int uScore = 0;
+    int uScore = ((MyApplication) this.getApplication()).getAttempts() * 100;
     int highScore = ((MyApplication) this.getApplication()).getHighScore();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
