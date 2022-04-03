@@ -34,7 +34,7 @@ public class hint extends AppCompatActivity {
         }
         if (attempts == 0){
             Toast.makeText(this, "Unfortunately, You Lose. The ran out of tries").show();
-
+        }
 
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
