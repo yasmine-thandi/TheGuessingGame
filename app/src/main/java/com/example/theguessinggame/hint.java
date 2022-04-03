@@ -20,6 +20,7 @@ public class hint extends AppCompatActivity {
         
         String guess = "15";
         String target = String.valueOf(((MyApplication) this.getApplication()).getTarget());
+        int attempts = ((MyApplication) this.getApplication()).getAttempts();
 
         if (Math.abs(Integer.valueOf(guess) - Integer.valueOf(target)) >= 10) {
             hint.setText("You are far from the target!");
