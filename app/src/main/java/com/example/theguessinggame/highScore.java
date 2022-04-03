@@ -10,13 +10,19 @@ import android.widget.TextView;
 
 
 public class highScore extends AppCompatActivity {
+    public int uScore = 0;
+    int highScore = ((MyApplication) this.getApplication()).getHighScore();
     @Override
-
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         TextView userScore = (TextView) findViewById((R.id.userScore));
+        if (uScore > highScore) {
+                highScore = uScore;
+            ((MyApplication) this.getApplication()).setHighScore(highScore);
+        }
+
+        userScore.setText(highScore);
 
         Button exit = (Button) findViewById(R.id.exit);
 
