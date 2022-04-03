@@ -27,6 +27,12 @@ public class hint extends AppCompatActivity {
         else {
             hint.setText("You are close to the target!");
         }
+        
+        if (Math.abs(Integer.valueOf(guess) == Integer.valueOf(target))) {
+            Toast.makeText(this, "Congratulations, You Win! You found the number " + target + " in " + attempts + " tries").show();
+        }
+        if (attempts == 0){
+            Toast.makeText(this, "Unfortunately, You Lose. The ran out of tries").show();
 
 
         exit.setOnClickListener(new View.OnClickListener() {
