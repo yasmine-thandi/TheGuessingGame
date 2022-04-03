@@ -1,0 +1,72 @@
+package com.example.theguessinggame;
+
+import com.example.theguessinggame.TheGuessingGameTest1;
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+/**
+ * Example local unit test, which will execute on the development machine (host).
+ *
+ * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+ */
+public class TheGuessingGameTest1 {
+    @Test
+    public void theGuessingGameHintTest() {
+        //Attempt at a JUnit Test
+        int userGuess, target;
+        System.out.println("Testing The Guessing Game");
+
+        userGuess = 16;
+        target = 1;
+        System.out.println("You are far from the target!");
+
+    }
+
+    @Test
+    public void theGuessingGameHintTwoTest() {
+        //Attempt at a JUnit Test 2
+        int userGuess, target;
+        System.out.println("Testing The Guessing Game");
+
+        userGuess = 3;
+        target = 1;
+        System.out.println("You are close from the target!");
+
+    }
+
+    @Test
+    public void theGuessingGameAnswerTest() {
+        //Attempt at a JUnit Test 3
+        int userGuess, target, attempts;
+        System.out.println("Testing The Guessing Game");
+
+        userGuess = 5;
+        target = 5;
+        attempts = 9;
+
+        if (userGuess == target) {
+            System.out.println("Congratulations, You Win! You found the number " + target + " in " + attempts + " tries");
+        } else {
+            System.out.println("Unfortunately, You Lose. The ran out of tries");
+        }
+    }
+
+    @Test
+    public void theGuessingGameAnswerTwoTest() {
+        //Attempt at a JUnit Test 4
+        int userGuess, target, attempts;
+        System.out.println("Testing The Guessing Game");
+
+        userGuess = 7;
+        target = 5;
+        attempts = 10;
+
+        if (userGuess == target) {
+            System.out.println("Congratulations, You Win! You found the number " + target + " in " + attempts + " tries");
+        } else {
+            System.out.println("Unfortunately, You Lose. The ran out of tries");
+        }
+    }
+}
+}
