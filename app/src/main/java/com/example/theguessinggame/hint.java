@@ -30,7 +30,7 @@ public class hint extends AppCompatActivity {
             hint.setText("You are close to the target!");
         }
         
-        if (Math.abs(Integer.valueOf(guess) == Integer.valueOf(target))) {
+        if (Integer.valueOf(guess) == Integer.valueOf(target)) {
             Toast.makeText(getApplicationContext(), "Congratulations, You Win! You found the number " + target + " in " + attempts + " tries",Toast.LENGTH_SHORT).show();
         }
         if (attempts == 0){
