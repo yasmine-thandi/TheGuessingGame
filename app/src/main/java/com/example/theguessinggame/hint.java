@@ -22,6 +22,7 @@ public class hint extends AppCompatActivity {
         String guess = "15";
         String target = String.valueOf(((MyApplication) this.getApplication()).getTarget());
         int attempts = ((MyApplication) this.getApplication()).getAttempts();
+        int attemptLeft = 10 - attempts;
 
         if (Math.abs(Integer.valueOf(guess) - Integer.valueOf(target)) >= 10) {
             hint.setText("You are far from the target!");
@@ -31,7 +32,7 @@ public class hint extends AppCompatActivity {
         }
         
         if (Integer.valueOf(guess) == Integer.valueOf(target)) {
-            Toast.makeText(getApplicationContext(), "Congratulations, You Win! You found the number " + target + " and have " + attempts + " tries left",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Congratulations, You Win! You found the number " + target + " in " + attemptLeft + " tries.",Toast.LENGTH_SHORT).show();
         }
         if (attempts == 0){
             Toast.makeText(getApplicationContext(), "Unfortunately, You Lose. The ran out of tries", Toast.LENGTH_SHORT).show();
